@@ -1,8 +1,53 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: #333;
 }
 
 a {
-  color: #00B7FF;
+  display: inline-block;
+  margin: 10px 0 5px;
+}
+
+a,
+a:link,
+a:visited {
+  color: #00b7ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 30px 0;
+}
+
+form > div {
+  margin: 20px 0;
+}
+
+form p {
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.message {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 1px;
+}
+
+.message :last-child {
+  margin-top: 10px;
 }

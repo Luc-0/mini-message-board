@@ -1,4 +1,10 @@
-<div>
-  <p><%= message.user %> | <span><%= message.added %></span></p>
+<div class="message">
+  <p>
+    <%= message.user %> &middot;
+    <span
+      ><%= message.added.toLocaleString().split(',').reverse().join(' · ')
+      %></span
+    >
+  </p>
   <p><%= message.text %></p>
 </div>

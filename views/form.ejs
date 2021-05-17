@@ -1,30 +1,36 @@
-<h1><%= title %></h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
 
-<form method="POST" action="/new">
-  <div>
-    <label>
-      <p>Name</p>
-      <input name="name" type="text" required />
-    </label>
-  </div>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="container">
+      <a href="/">&lt; Back</a>
 
-  <div>
-    <label>
-      <p>Message</p>
-      <input name="message" type="text" required />
-    </label>
-  </div>
+      <h1><%= title %></h1>
 
-  <button type="submit">Send message</button>
-</form>
+      <form method="POST" action="/new">
+        <div>
+          <label>
+            <p>Name</p>
+            <input name="name" type="text" required />
+          </label>
+        </div>
 
-<style>
-  input {
-    width: 100%;
-    max-width: 300px;
-  }
+        <div>
+          <label>
+            <p>Message</p>
+            <input name="message" type="text" required />
+          </label>
+        </div>
 
-  button {
-    margin: 20px 0;
-  }
-</style>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </body>
+</html>
