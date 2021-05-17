@@ -1,0 +1,30 @@
+<h1><%= title %></h1>
+
+<form method="POST" action="/new">
+  <div>
+    <label>
+      <p>Name</p>
+      <input name="name" type="text" required />
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <p>Message</p>
+      <input name="message" type="text" required />
+    </label>
+  </div>
+
+  <button type="submit">Send message</button>
+</form>
+
+<style>
+  input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  button {
+    margin: 20px 0;
+  }
+</style>
